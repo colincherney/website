@@ -1,0 +1,143 @@
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 50rem;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+#name {
+  width: auto;
+  text-align: left;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#description {
+  flex: 1;
+  text-align: left;
+  padding-left: 20px;
+  border-left: 1px solid #000;
+  font-family: "Serif", garamond;
+}
+
+#space {
+  width: 20rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+#social-icons {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+#social-icons a {
+  color: #000;
+  font-size: 18px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: "Serif", garamond;
+}
+
+#social-icons a:first-child {
+  margin-left: 0;
+}
+
+#social-icons a:hover {
+  color: #0077b5; /* LinkedIn blue color */
+}
+
+#social-icons a:nth-child(2):hover {
+  color: #6e5494; /* GitHub purple color */
+}
+
+#social-icons a:nth-child(3):hover {
+  color: #d44638; /* Gmail red color */
+}
+
+#timeline {
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.timeline-date {
+  width: 100px;
+  font-weight: bold;
+  font-family: "Serif", garamond;
+}
+
+.timeline-event {
+  flex: 1;
+  font-family: "Serif", garamond;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  #name,
+  #description {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    align-items: center;
+  }
+
+  #description {
+    border-top: 1px solid #000;
+    border-left: none;
+  }
+
+  #social-icons {
+    margin-top: 15px;
+    justify-content: center;
+  }
+
+  #timeline {
+    text-align: center;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-date {
+    width: auto;
+    margin-bottom: 5px;
+  }
+}
